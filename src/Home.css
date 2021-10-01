@@ -1,0 +1,83 @@
+.hrow{
+
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x)/ -2);
+        margin-left: calc(var(--bs-gutter-x)/ -2);
+        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-end;
+        flex-direction: row;
+
+}
+
+fb{
+    color:blue;
+    text-decoration: underline wavy #2e05f2;
+}
+
+.zoomInLeft {
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    } 
+   
+.at-item {
+    animation-name: focus-in-contract;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+  @keyframes focus-in-contract {
+    0%{
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100%{
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
